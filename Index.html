@@ -18,9 +18,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div style="background-color: rgb(68, 44, 5); " class="modal-header">
+          <h1 class="modal-title fs-5 text-white " id="exampleModalLabel">PLEASE RESERVE YOUR TABLE</h1>
+          <button  style="background-color: white;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div  style="background-color: rgba(185, 127, 12, 0.698);" class="modal-body">
+          <form>
+            <div class="mb-3 text-white ">
+              <label for="recipient-name" class="col-form-label" autocomplete="off" placeholder="Enter your name">ENTER YOUR NAME:</label>
+              <input type="text" class="form-control" name="text" id="recipient-name">
+            </div>
+            <div class="mb-3 text-white">
+                <label for="recipient-name" class="col-form-label" autocomplete="off" placeholder="Enter your Mobile No">ENTER YOUR MOBILE NO:</label>
+                <input type="text" class="form-control" name="text" id="recipient-name">
+              </div>
+            <div class="mb-3 text-white">
+              <label for="message-text" class="col-form-label"  autocomplete="off">Message:</label>
+              <textarea name="message" class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div style="background-color: rgba(237, 199, 63, 0.485);" class="modal-footer ">
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-dark text-white">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- <<<<<<<<<Navbar>>>>>>>> -->
     <nav class="navbar navbar-expand-lg bg-body-dark sticky-top">
         <div class="container-fluid">
@@ -51,7 +87,9 @@
                         <a class="nav-link" href="#">Review</a>
                     </li>
                 </ul>
-                <button type="button" class="btn ">Book Now</button>
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Book Now
+                  </button>
                 <!-- <button type="button" class="btn btn-dark"> <a href="">SignUp</a> </button> -->
             </div>
         </div>
@@ -82,7 +120,7 @@
             <div class="row">
                 <div class="Col-md-4">
                     <h1 style="text-align: center;font-weight: 900; color: rgb(78,48,5);"
-                        class="text text-uppercase  heading ">ABOUT</h1>
+                        class="text text-uppercase  heading ">ABOUT US</h1>
                 </div>
             </div>
         </div>
@@ -93,7 +131,7 @@
         <!-- <div class="Chose"> -->
 
            
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">                    
                     <div class="col-md-4 col-sm-12">
                         <div class="One">
@@ -125,7 +163,7 @@
                 </div>
             </div>
         
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="detail">
@@ -169,49 +207,211 @@
     </section>
     <br>
     <br>
+    <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="menuu">
+                <img width="100%" src="./Images/y.jpg" alt="">
+                <h1> CAPPUCCINO </h1>
+                <ul>
+                    <li>WATER</li>
+                    <li>COFFEE</li>
+                    <li>MILK</li>
+                 
+                </ul>
+                <a href="#"> Rs:250/-  </a>
+                <br>
+              </div>
+            </div> 
+            <div class="col-md-4 col-sm-6">
+                <div class="menuu">
+                  <img width="100%" src="./Images/y.jpg" alt="">
+                  <h1>  Black Coffee </h1>
+                  <ul>
+                      <li>One</li>
+                      <li>Two</li>
+                      <li>Three</li>
+                      <li>FOur</li>
+                  </ul>
+                  <a href="#"> Rs:250/-  </a>
+                  <br>
+                </div>
+              </div> 
+              <div class="col-md-4 col-sm-6">
+                <div class="menuu">
+                  <img width="100%" src="./Images/y.jpg" alt="">
+                  <h1>  REGULAR COFFEES </h1>
+                  <ul>
+                      <li>One</li>
+                      <li>Two</li>
+                      <li>Three</li>
+                      <li>FOur</li>
+                  </ul>
+                  <a href="#"> Rs:250/-  </a>
+                  <br>
+                </div>
+              </div> 
+              <div class="col-md-4 col-sm-6">
+                <div class="menuu">
+                  <img width="100%" src="./Images/y.jpg" alt="">
+                  <h1>  Black Coffee </h1>
+                  <ul>
+                      <li>One</li>
+                      <li>Two</li>
+                      <li>Three</li>
+                      <li>FOur</li>
+                  </ul>
+                  <a href="#"> Rs:250/-  </a>
+                  <br>
+                </div>
+              </div> 
+              <div class="col-md-4 col-sm-6">
+                <div class="menuu">
+                  <img width="100%" src="./Images/y.jpg" alt="">
+                  <h1>  Black Coffee </h1>
+                  <ul>
+                      <li>One</li>
+                      <li>Two</li>
+                      <li>Three</li>
+                      <li>FOur</li>
+                  </ul>
+                  <a href="#"> Rs:250/-  </a>
+                  <br>
+                </div>
+              </div> 
+              <div class="col-md-4 col-sm-6">
+                <div class="menuu">
+                  <img width="100%" src="./Images/y.jpg" alt="">
+                  <h1>  Black Coffee </h1>
+                  <ul>
+                      <li>One</li>
+                      <li>Two</li>
+                      <li>Three</li>
+                      <li>FOur</li>
+                  </ul>
+                  <a href="#"> Rs:250/-  </a>
+                  <br>
+                </div>
+              </div> 
+              <div class="col-md-4 col-sm-6">
+                <div class="menuu">
+                  <img width="100%" src="./Images/y.jpg" alt="">
+                  <h1>  Black Coffee </h1>
+                  <ul>
+                      <li>One</li>
+                      <li>Two</li>
+                      <li>Three</li>
+                      <li>FOur</li>
+                  </ul>
+                  <a href="#"> Rs:250/-  </a>
+                  <br>
+                </div>
+              </div>  
+              <div class="col-md-4 col-sm-6">
+                <div class="menuu">
+                  <img width="100%" src="./Images/y.jpg" alt="">
+                  <h1>  Black Coffee </h1>
+                  <ul>
+                      <li>One</li>
+                      <li>Two</li>
+                      <li>Three</li>
+                      <li>FOur</li>
+                  </ul>
+                  <a href="#"> Rs:250/-  </a>
+                  <br>
+                </div>
+              </div>   
+              <div class="col-md-4 col-sm-6">
+                <div class="menuu">
+                  <img width="100%" src="./Images/y.jpg" alt="">
+                  <h1>  cap </h1>
+                  <ul>
+                      <li>One</li>
+                      <li>Two</li>
+                      <li>Three</li>
+                      <li>FOur</li>
+                  </ul>
+                  <a href="#"> Rs:250/-  </a>
+                  <br>
+                </div>
+            </div>                
+                           
+          </div>
+        </div>
+    
+      </section>
+      <br>
+      <br>
+      <section class="Menu">
+        <div class="">
+            <div class="row">
+                <div class="Col-md-4">
+                    <h1 style="text-align: center;font-weight: 900; color: rgb(78,48,5); "
+                        class="text text-uppercase  heading "> CONTACT US</h1>
+                </div>
+               
+            </div>
+        </div>
+        <br>
+       
+    </section>
     <br>
     <br>
-    <br>
-    <br>
+      <!-- <<<<<Contact>>>> -->
+        <section style="border: 2px solied red ; background-color: rgba(95, 60, 5, 0.348); " >
+            <div class="container">
+                  <div class="content">
+                <div class="left-side">
+                  <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    
+                    <div class="topic">Address</div>
+                    <div class="text-one">BADURABAD CHAR MINAR NEAR EXPERTIZO COFFEE HOUSE </div>
+                    <div class="text-two"> PLEASE COME FAST </div>
+                  </div>
+                  <div class="phone details">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+92333-090909090</div>
+                    <div class="text-two">+92359-098776500</div>
+                  </div>
+                  <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                     <div class="text-one">M.UmairShiekh@CoffeeHouse.com</div>
+                    <div class="text-two">info.@CoffeeHouse.com</div>
+                  </div>
+                </div>
+                <div class="right-side">
+                  <div class="topic-text">Please Send your valuable Feed Back</div>
+                  <p>If you have any Problem about us so please contact us and send a feedback us about like COFFEE text or any types of quries related to my COFFE HOUSE, you can send me message from here. It's my pleasure to help you  .</p>
+                <form  action="https://formspree.io/f/xzblpbaq"
+                method="POST">
+                  <div class="input-box">
+                    <input type="text" placeholder="Enter your name" required name="message"  autocomplete="off">
+                  </div>
+                  <div class="input-box">
+                    <input type="email" placeholder="Enter your email" name="email" required autocomplete="off" >
+                  </div>
+                  <div class="input-box message-box">
+                    <textarea name="message"  cols="30" rows="10"   placeholder=" Enter Your Message"  required min="10"  autocomplete="off" ></textarea  >
+                  </div>
+                  <div class="button">
+                    <!-- <input type="submit" value="Send Now" > -->
+                    <button type="submit">Send Now</button>
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+            <br>
+            <br>
+          </section>       
 
     <!-- Footer -->
     <footer class="  text-center text-lg-start ">
-        <!-- Section: Social media -->
-        <!-- <section class=" mainfooter d-flex justify-content-center justify-content-lg-between p-4 border-bottom"> -->
-        <!-- Left -->
-        <!-- <div class="  me-5 d-none d-lg-block">
-        <span>Get connected with us on social networks:</span>
-      </div> -->
-        <!-- Left -->
-
-        <!-- Right -->
-        <!-- <div>
-        <a href="" class="me-4 link-secondary">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 link-secondary">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 link-secondary">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 link-secondary">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 link-secondary">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 link-secondary">
-          <i class="fab fa-github"></i>
-        </a>
-      </div> -->
-        <!-- Right -->
-        <!-- </section> -->
-        <!-- Section: Social media -->
-
-        <!-- Section: Links  -->
-        <br>
-        <br>
+             
         <section class="footerr">
             <div class=" Mainfooter container text-center text-md-start mt-5">
                 <!-- Grid row -->
