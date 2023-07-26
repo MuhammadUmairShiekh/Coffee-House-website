@@ -105,6 +105,16 @@ html{
     color: white !important;
     
 }
+.heading {
+  text-align: center;
+}
+.heading a {        
+      font-size: 40px;
+       font-weight: 900; 
+       color: rgb(78,48,5); 
+       text-decoration: none;   
+       text-transform: uppercase;
+}
 
 .mmain{
     background-image: linear-gradient(rgba(16, 16, 17, 0.8), rgba(19, 19, 20, 0.7)), url(./Images/new\ bg.jpg);
@@ -116,10 +126,10 @@ html{
     /* z-index: 2 !important; */
     display: flex !important;
     flex-wrap: wrap;
-    box-shadow: 0px 1px 2px rgba(19, 26, 26, 0.5), 
+    /* box-shadow: 0px 1px 2px rgba(19, 26, 26, 0.5),  */
     /* 0px 2px 4px rgba(46, 47, 47, 0.5),  */
     /* 0px 4px 8px rgba(39, 40, 40, 0.5),  */
-    0px 8px 16px rgba(20, 30, 30, 0.796);
+    /* 0px 8px 16px rgba(20, 30, 30, 0.796); */
 }
 
 /* .mmain::after{
@@ -436,6 +446,73 @@ html{
    }
   }
   
+
+  /* <<<<<<<<<<<,Reviw>>>>>>>>>>>> */
+  .view{
+      outline: none;
+    margin:  20px 0;
+
+    position: relative;
+     z-index: 1;
+    box-shadow: 0px 1px 2px rgba(24, 25, 25, 0.5), 
+    0px 2px 4px rgba(46, 47, 47, 0.5), 
+    0px 4px 8px rgba(39, 40, 40, 0.5), 
+    0px 8px 16px rgba(20, 30, 30, 0.796);   
+    cursor: pointer;
+    /* background-color: rgba(206, 188, 170, 0.436); */
+    width: 100%;
+    border: none !important;   
+    /* border-radius: 60px !important; */
+    
+
+}
+
+
+
+.view img{
+  padding: 10px !important;
+  width: 200px;
+  /* height: 200px; */
+  /* border-radius: 100px; */
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.view h1{
+    font-size: 34px;
+    text-align: center;
+    transition: 0.5s all;
+    color: rgb(78,48,5);
+    font-weight: 800;
+    margin: 0 10px 10px 0;
+    transition: all o.5 ease-in-out;
+
+}
+.Star{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+.fa-star:hover{
+  transform: scale(1.4);
+}
+
+
+
+.view p{
+  
+    padding: 20px;
+    margin: 20px;
+   text-align: center !important;
+   font-size: 10px;
+   background-color: rgba(20, 19, 19, 0.419);
+   color: white;
+   /* border-radius: 10px; */
+   /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+}
 
 
 
